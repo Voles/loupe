@@ -250,7 +250,7 @@ function Loupe(el) {
     */
     destroy: function () {
       var self = this;
-      var elRemoveListener = self.el.removeEventListener.bind(el);
+      var elRemoveListener = self.el.removeEventListener.bind(self.el);
 
       // Remove this.lens
       if (self.lens) {
